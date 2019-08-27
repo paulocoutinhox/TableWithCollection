@@ -63,9 +63,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             cell.bind(tag: indexPath.row, title: item.title, listData: item.items)
             cell.tag = indexPath.row
-            
-            cell.setNeedsLayout()
-            cell.layoutIfNeeded()
         }
         
         return cell
